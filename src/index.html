@@ -7,93 +7,239 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
-  
+
 </head>
 <style>
     html, body, div, span, figure, h1, h2, h3, h4, p, a, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, details, figure, figcaption, footer, header, hgroup, nav, section, img { margin: 0; padding: 0; border: 0; vertical-align: baseline; font: inherit; font-size: 100%; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 .clearfix:after { display: block; visibility: hidden; clear: both; height: 0; content: "."; }
-.clearfix { display: inline-block; } 
+.clearfix { display: inline-block; }
 .clearfix { display: block; }
 .none { display: none; }
+body {
+  line-height: 1;
+}
+ol, ul, dl {
+	margin: 0;
+	padding: 0;
+}
+li {
+  list-style-type: none; /* Убираем маркеры */
+ }
+ ul {
+  margin-left: 0; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+ }
  table {
-   
-    border-spacing: 7px 11px; 
+
+    border-spacing: 7px 11px;
  }
  td:hover{
-     
+
      background-color: #ff0000;
    color: #000000;
-     
+
   }
  #Yshirt{
-     width: 30px; 
+     width: 30px;
      height: 30px;
      border: 1px solid black;
      background-color: yellow;
-     
+
  }
 
  #Wskirt{
     width: 30px;
-    height: 30px; 
+    height: 30px;
     border: 1px solid black;
      background-color: white;
  }
  #Gskirt{
-    width: 30px; 
+    width: 30px;
     height: 30px;
     border: 1px solid black;
      background-color:green;
  }
  #head-menu {
 	position: relative;
-	z-index: 3;
-	margin-bottom: 34px;
-	min-width: 990px;
+	margin-bottom: 20px;
+	min-width: 600px;
 	height: 100px;
 	border-bottom: 1px solid #343738;
 	background: #bfc4a5;
 	line-height: 100px;
 }
-#head-menu-content {
+
+.head-menu-content {
 	position: relative;
 	display: block;
+	height: 100px;
+}
+.menu-left {
+	display: block;
+	width: 200px;
+	height: 50px;
+	background: url(img/the_shop_logo.svg) 0 0 no-repeat;
+  background-size:100%;
+	text-indent: -99999px;
+  padding: 5; /* Поля */
+}
+#head-menu .head-menu-left {
+  display: block;
+  position: absolute;
+	top: 0;
+	height: 20px;
+  	left: 30px;
+}
+#head-menu .head-menu-left-logo{
+  position: relative;
+	display: block;
+	float: right;
+	height: 20px;
+}
+
+
+#head-menu .menu-left {
+	margin: 20px 20px 0 0;
+}
+
+
+
+
+#head-menu .head-menu-center {
+  width: 150px;
+   height: 60px;
+position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   	margin: auto;
+   	background: url(img/oggetto_logo.svg) 0 0 no-repeat;
+
+}
+#head-menu .head-menu-center-logo{
+  position: absolute;
+	display: block;
+
 	height: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+#head-menu .head-menu-right {
+  display: block;
+  position: absolute;
+	top: 0;
+	height: 80px;
+  	right: : 20px;
+}
+#head-menu .nav-btn-question {
+
+	padding: 20px;
+	white-space: nowrap;
+	line-height: 28px;
+	font-size: 25px;
+	font-weight: 300;
+	cursor: pointer;
+	color: rgb(204,0,1);
+}
+
+#head-menu .nav-btn-question:hover {
+	color:#EC5F24;
+}
+#head-menu .cell-link {
+	display: block;
+	color: black;
+	text-transform: uppercase;
+}
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+.center {
+	float: right;
+}
+#head-menu .head-menu-left {
+	left: 20px;
+}
+
+#head-menu .head-menu-right {
+	right: 50px;
 }
 </style>
 
 <body>
 
 <!-- Код для примера -->
-<header class="header">
-    <h1>SHOP!!!</h1>
-</header>
+
 
 
 <div id="head-menu" class>
-<div class = "head-menu-content">
-    	<div class="head-menu-left">
-            
-                <div id="nav_item_logo" class="head-menu-logo">
-                    <a class="menu-link" href="" target="_blank"></a>
-                        </a>
-                    </div>
+
+<div class = "head-menu-content  clearfix">
+
+      	<div class="head-menu-center center clearfix">
+
+                  <div id="nav_item_center" class="head-menu-center-logo">
+                      <a class="menu-center" href="" target="_blank"></a>
+
+                      </div>
+
             </div>
-        </div>
+
+
+
+    	<div class="head-menu-left left clearfix">
+
+                <div id="nav_item_left" class="head-menu-left-logo">
+                    <a class="menu-left" href="" target="_blank"></a>
+
+                    </div>
+
+          </div>
+          <div class="head-menu-right right clearfix">
+
+                    <ul class=nav-item-right >
+                      <li id ="nav-item-cellphone" class=nav-item-cellphone-clear>
+                        <span class="cell-link">
+                          <a  class="nav-btn-question" tagre="_blank">+7(812)2•12•85•06</a>
+                        </span>
+
+                        </li>
+
+
+                        </ul>
+
+
+
+  </div>
     </div>
+</div>
 <footer class="footer">
         <table  border="0">
                 <caption>Цвета</caption>
-                <tr> 
-                 
+                <tr>
+
                  <td id=Yshirt onclick="y()" ></td>
                  <td id=Wskirt onclick="w()" ></td>
                  <td id=Gskirt onclick="g()" ></td>
 
                 </tr>
             </table>
-             
+
 </footer>
 <img id="myImage" src ="img/tshirt_yellow.jpg" width="400" height="350">
 <script src="js/scripts.js"></script>
