@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
-
+    <link href="http://allfont.ru/allfont.css?fonts=roboto-regular" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 <style>
     html, body, div, span, figure, h1, h2, h3, h4, p, a, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, details, figure, figcaption, footer, header, hgroup, nav, section, img { margin: 0; padding: 0; border: 0; vertical-align: baseline; font: inherit; font-size: 100%; }
@@ -16,13 +17,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .clearfix { display: inline-block; }
 .clearfix { display: block; }
 .none { display: none; }
+a{
+  color:rgb(204,0,1);
+}
 body {
   line-height: 1;
+  font-family: 'Roboto', sans-serif;
 }
-ol, ul, dl {
-	margin: 0;
-	padding: 5;
-}
+
 li {
   list-style-type: none; /* Убираем маркеры */
  }
@@ -30,16 +32,10 @@ li {
   margin-left: 0; /* Отступ слева в браузере IE и Opera */
   padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
  }
- table {
-
-    border-spacing: 7px 11px;
+ table{
+  border-spacing: 7px 11px;
  }
- td:hover{
-
-     background-color: #ff0000;
-   color: #000000;
-
-  }
+ 
  #Yshirt{
      width: 30px;
      height: 30px;
@@ -60,26 +56,52 @@ li {
     border: 1px solid black;
      background-color:green;
  }
+ #S{
+  width: 30px;
+    height: 30px;
+    border: 1px solid black;
+     
+ }
+#M{
+  width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+#L{
+  width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+td{
+  text-align: center;
+}
+td:hover{
+
+border:none;
+border: 3px solid red;
+
+}
  #head-menu {
 	position: relative;
 	min-width: 600px;
-	height: 100px;
-	border-bottom: 1px solid #343738;
-	background: #bfc4a5;
-	line-height: 100px;
+	height: 60px;
+	background: #fdfdfd;
+	line-height: 60px;
 }
 
 .head-menu-content {
 	position: relative;
 	display: block;
-	height: 100px;
+	height: 60px;
 }
-.menu-left {
+ .menu-left {
+   
 	display: block;
-	width: 200px;
-	height: 70px;
+	width: 160px;
+  height: 70px;
+  
 	background: url(img/the_shop_logo.svg) 0 0 no-repeat;
-
+background-size: 80%;
 	text-indent: -99px;
 
 }
@@ -88,7 +110,8 @@ li {
   position: absolute;
 	top: 0;
 	height: 20px;
-  	left: 30px;
+    left: 30px;
+    padding-left: 30px;
 }
 #head-menu .head-menu-left-logo{
   position: relative;
@@ -99,7 +122,7 @@ li {
 
 
 #head-menu .menu-left {
-	margin: 20px 20px 0 0;
+	margin: 12px 20px 0 0;
 }
 
 
@@ -109,12 +132,12 @@ li {
   width: 120px;
    height: 80px;
      position: absolute;
-     top: 50%;
+     top:5%;
      left: 50%;
-     margin: -40px 0 0 -30px;
+     margin: auto;
 
-  /*	background: url(img/oggetto_logo.svg) 0 0 no-repeat; */
-;
+  
+
 
 }
 #head-menu .head-menu-center-logo{
@@ -124,23 +147,12 @@ li {
 	height: 80px;
 }
 
-
-
-
-
-
-
-
-
-
-
-}
 #head-menu .head-menu-right {
   display: block;
   position: absolute;
 	top: 0;
 	height: 80px;
-  	right: : 20px;
+  right:  20px;
 }
 #head-menu .nav-btn-question {
 
@@ -153,9 +165,7 @@ li {
 	color: rgb(204,0,1);
 }
 
-#head-menu .nav-btn-question:hover {
-	color:#EC5F24;
-}
+
 #head-menu .cell-link {
 	display: block;
 	color: black;
@@ -168,9 +178,7 @@ li {
 .right {
 	float: right;
 }
-.center {
-	float: right;
-}
+
 #head-menu .head-menu-left {
 	left: 20px;
 }
@@ -183,7 +191,8 @@ li {
 
  min-width: 600px;
  height: 60px;
- border-bottom: 1px solid #343738;
+ border-bottom: 1px solid #d1d2d3;
+ border-top:  1px solid #d1d2d3;
  background: rgb(241,242,236);
  line-height: 60px;
 }
@@ -191,7 +200,7 @@ li {
 .body-menu-content {
  position: relative;
  display: block;
- height: 100px;
+ height: 60px;
 }
 ul {
   list-style-type: none;
@@ -199,41 +208,158 @@ ul {
 
 
 
-.body-menu ul {
-  margin: 0 auto;
+.body-menu-content ul {
+  display: inline;
   text-transform: uppercase;
-  color: #fff;
-  padding-top: 40px;
-  margin-left: 380px;
-  font-weight: 600;
-  position: absolute;
+  padding-left: 40px;
+  margin-right: 60%;
+  font-weight: 300;
+  position: static;
 }
 
 .body-menu-content li {
   display: inline;
-  padding:20px;
+  padding-left: 30px;
+  padding:10px;
+  position: static;
 }
 
 .li-1 {
-  padding-right: 65px;
+  padding-right: 50px;
 
   height: 90px;
   width: 90px;
 }
 
-.li-3 {
-  padding:10px;
-  padding-left: 48px;
+.li-4 {
+
+  padding-left: 40px;
   padding-right: 55px;
 }
+.body-menu-search{
+ 
+  display: block;
+  position: absolute;
+	top: 0;
+	height: 80px;
+  right:  20px;
 
+  
+
+
+}
+input{
+  padding-right: 1px;
+
+        background: url("img/Zoom.png") 95% 0 no-repeat;
+        background-size:10%; 
+        background-color: white;
+}
+input:hover{
+  background: none;
+  background-color: white;
+}
+input:focus{
+  background: none;
+  background-color: white;
+}
+
+   #sidebar {
+     background: rgb(255, 255, 255);
+     float: left;
+     width: 50%;
+     height: 500px;
+}
+.sidebar-main{
+ position: relative;
+ display: block;
+ padding-left:100px;
+   
+}
+.sidebar-main ul{
+  display: illine;
+  padding-top: 7%;
+  padding-bottom: 3%;
+  position: relative;
+}
+.sidebar-main li{
+display: inline;
+ 
+ 
+}
+#main {
+     background: rgb(255, 255, 255);
+     float: right;
+     width: 50%;
+     height: 500px;
+}
+.main-content{
+  display: block;
+  padding-top: 10%;
+}
+.main-cost{
+  display: block;
+  padding-top: 5%;
+}
+.main-choice{
+  display: block;
+  padding-top: 5%;
+  
+}
+.main-link{
+  display: block;
+  padding-top: 5%;
+  
+}
+.main-choice table{
+  padding: 5px;
+  
+
+}
+.main-cost p{
+font-weight: 500;
+font-size: 25px;
+color:rgb(204,0,1);
+}
+caption{
+  text-align:left;
+  padding-left: 12px;
+}
+.container {
+  min-width: 600px;
+}
+button{
+  width: 110px;
+   height: 60px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 35px;
+  padding: 0 20px;
+  font-size: 20px;
+  color:white;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+  background-clip: padding-box;
+  border: 1px solid;
+  border-radius: 3px;
+  cursor: pointer;
+  background: rgb(204,0,1);
+  border-color: red red red;
+
+}
+#link-cash{
+  color:rgb(176, 174, 185)
+  
+}
 
 </style>
 
 <body>
 
-<!-- Код для примера -->
 
+    <div class="container">
 
 
 <div id="head-menu" class>
@@ -241,7 +367,7 @@ ul {
 <div class = "head-menu-content  clearfix">
 
       	<div class="head-menu-center center clearfix">
-<img id="myImage" src ="img/oggetto_logo.svg" width="120" height="80">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340"><title>ogg_logo_new</title><path  d="M73.6,0a73.6,73.6,0,1,0,73.6,73.6A73.6,73.6,0,0,0,73.6,0ZM98,116.8c-19.4,14.8-46.7,10.1-61.9-10.5-12-16.2-13-37-2.6-54.6,15.3-26,49.1-36.9,76.8-24.9l2.5,1.3-23-.8V28l6.1,1v1.1c-2.2.3-4.5,1-6.7.8C69.6,29.2,44.4,44.6,38,65.1c-7,22.4,7.5,46.8,30.3,50.3,16,2.4,32.2-9.2,34-25.1,1-9-3.2-16-10.5-21s-12.9-4.2-19.4-.5S63.9,77.3,65,84a11.9,11.9,0,0,0,.8-2c1.3-6.8,5-10.9,10.9-11.9a15,15,0,0,1,16,7.3c6,10.1-.4,23.3-12.7,25.7-9.2,1.8-16.4-1.8-21.8-9.1s-5.3-17.4-.8-24.6c11.7-18.8,38-18.2,50.4,1.2C117.4,85.6,113.2,105.2,98,116.8Z" style="fill:#cc0001"/><path d="M78.8,96.1A12.6,12.6,0,0,0,78.5,71c-7.9.3-12.2,6.1-12.6,12.6S72,96.2,78.8,96.1Zm.4-17.6a5.1,5.1,0,0,1,4.9,5.4,5,5,0,1,1-4.9-5.4Z" style="fill:#cc0001"/></svg>
 
                   <div id="nav_item_center" class="head-menu-center-logo">
                       <a class="menu-center" href="" target="_blank"></a>
@@ -260,11 +386,9 @@ ul {
                     <ul class=nav-item-right >
                       <li id ="nav-item-cellphone" class=nav-item-cellphone-clear>
                         <span class="cell-link">
-                          <a  class="nav-btn-question" tagre="_blank">+7(812)2•12•85•06</a>
+                          <a  class="nav-btn-question" tagre="_blank">+7(812)•2•12•85•06</a>
                         </span>
-
                         </li>
-
 
                         </ul>
 
@@ -275,29 +399,77 @@ ul {
 </div>
 <div id="body-menu" class>
 <div class = "body-menu-content  clearfix">
+  
   <ul>
-    <li class="li-1">Lisp</li>
-    <li class="li-2">Java</li>
-    <li class="li-3">Perl</li>
-    <li class="li-4">SQL</li>
+      <a href="#"><li class="li-1" >Lisp</li></a>
+      <a href="#"> <li class="li-2">Java</li></a>
+      <a href="#"> <li class="li-3">Perl</li></a>
+      <a href="#"> <li class="li-4">SQL</li></a>
+      <a href="#"> <li class="li-5">PHP</li></a>
   </ul>
+  <div class="body-menu-search right"> 
+      <input type="text" size="20">
+  </div>
+</div>
+</div>
+<div id="sidebar">
+    <div class ="sidebar-main">
+        <ul>
+            <a href="#"><li  >LISP</li></a>
+            <li >/</li>
+            <a href="#"> <li >Одежда</li></a>
+            <li >/</li>
+            <a href="#"> <li >Футболки</li></a>
+        </ul>
+    <img id="myImage" src ="img/tshirt_yellow.jpg" width="450" height="450">
+    </div>
+  </div>
+    <div id="main">
+      <div class="main-content">
+    <h1>Футболка Alien technology</h1> <br>
+    <p>Состав:100% хлопок, динамическая типизация, обратная польская нотация. Производство : Россия.</p>
+    <div class="main-cost">
+      <p><b>1500₽</b></p>
+
+      <div class="main-choice">
+
+      <table  border="0">
+          <caption>Размеры</caption>
+          <tr>
+  
+           <td id="S" >S</td>
+           <td id="M" >M</td>
+           <td id="L" >L</td>
+  
+          </tr>
+      </table>
+    <table  border="0">
+        <caption >Цвета</caption>
+        <tr>
+
+         <td id=Yshirt onclick="y()" ></td>
+         <td id=Wskirt onclick="w()" ></td>
+         <td id=Gskirt onclick="g()" ></td>
+
+        </tr>
+    </table>
+<div class="main-buy">
+  <button>Купить</button>
+  <div class =main-link>
+      <img src="img/samples.svg" width="20" height="20" ><a href="">Отложить на потом</a>
+</div>
+    </div>
+    </div>
+  </div>
 </div>
 </div>
 
+</div>
 <footer class="footer">
-        <table  border="0">
-                <caption>Цвета</caption>
-                <tr>
-
-                 <td id=Yshirt onclick="y()" ></td>
-                 <td id=Wskirt onclick="w()" ></td>
-                 <td id=Gskirt onclick="g()" ></td>
-
-                </tr>
-            </table>
+       
 
 </footer>
-<img id="myImage" src ="img/tshirt_yellow.jpg" width="400" height="350">
+
 <script src="js/scripts.js"></script>
 </body>
 </html>
