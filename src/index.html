@@ -21,7 +21,7 @@ body {
 }
 ol, ul, dl {
 	margin: 0;
-	padding: 0;
+	padding: 5;
 }
 li {
   list-style-type: none; /* Убираем маркеры */
@@ -62,7 +62,6 @@ li {
  }
  #head-menu {
 	position: relative;
-	margin-bottom: 20px;
 	min-width: 600px;
 	height: 100px;
 	border-bottom: 1px solid #343738;
@@ -78,11 +77,11 @@ li {
 .menu-left {
 	display: block;
 	width: 200px;
-	height: 50px;
+	height: 70px;
 	background: url(img/the_shop_logo.svg) 0 0 no-repeat;
-  background-size:100%;
-	text-indent: -99999px;
-  padding: 5; /* Поля */
+
+	text-indent: -99px;
+
 }
 #head-menu .head-menu-left {
   display: block;
@@ -107,15 +106,15 @@ li {
 
 
 #head-menu .head-menu-center {
-  width: 150px;
-   height: 60px;
-position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   	margin: auto;
-   	background: url(img/oggetto_logo.svg) 0 0 no-repeat;
+  width: 120px;
+   height: 80px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     margin: -40px 0 0 -30px;
+
+  /*	background: url(img/oggetto_logo.svg) 0 0 no-repeat; */
+;
 
 }
 #head-menu .head-menu-center-logo{
@@ -179,6 +178,56 @@ position: absolute;
 #head-menu .head-menu-right {
 	right: 50px;
 }
+#body-menu {
+ position: relative;
+
+ min-width: 600px;
+ height: 60px;
+ border-bottom: 1px solid #343738;
+ background: rgb(241,242,236);
+ line-height: 60px;
+}
+
+.body-menu-content {
+ position: relative;
+ display: block;
+ height: 100px;
+}
+ul {
+  list-style-type: none;
+}
+
+
+
+.body-menu ul {
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: #fff;
+  padding-top: 40px;
+  margin-left: 380px;
+  font-weight: 600;
+  position: absolute;
+}
+
+.body-menu-content li {
+  display: inline;
+  padding:20px;
+}
+
+.li-1 {
+  padding-right: 65px;
+
+  height: 90px;
+  width: 90px;
+}
+
+.li-3 {
+  padding:10px;
+  padding-left: 48px;
+  padding-right: 55px;
+}
+
+
 </style>
 
 <body>
@@ -192,16 +241,12 @@ position: absolute;
 <div class = "head-menu-content  clearfix">
 
       	<div class="head-menu-center center clearfix">
+<img id="myImage" src ="img/oggetto_logo.svg" width="120" height="80">
 
                   <div id="nav_item_center" class="head-menu-center-logo">
                       <a class="menu-center" href="" target="_blank"></a>
-
                       </div>
-
             </div>
-
-
-
     	<div class="head-menu-left left clearfix">
 
                 <div id="nav_item_left" class="head-menu-left-logo">
@@ -228,6 +273,17 @@ position: absolute;
   </div>
     </div>
 </div>
+<div id="body-menu" class>
+<div class = "body-menu-content  clearfix">
+  <ul>
+    <li class="li-1">Lisp</li>
+    <li class="li-2">Java</li>
+    <li class="li-3">Perl</li>
+    <li class="li-4">SQL</li>
+  </ul>
+</div>
+</div>
+
 <footer class="footer">
         <table  border="0">
                 <caption>Цвета</caption>
