@@ -85,6 +85,7 @@ border: 3px solid red;
 	position: relative;
 	min-width: 600px;
 	height: 60px;
+  width: 100%;
 	background: #fdfdfd;
 	line-height: 60px;
 }
@@ -213,25 +214,25 @@ ul {
   text-transform: uppercase;
   padding-left: 40px;
   margin-right: 60%;
-  font-weight: 300;
-  position: static;
+  text-align: justify;
+  position: relative;
 }
 
 .body-menu-content li {
   display: inline;
   padding-left: 30px;
   padding:10px;
-  position: static;
+  position: relative;
 }
 
 .li-1 {
   padding-right: 50px;
-
+ 
   height: 90px;
   width: 90px;
 }
 
-.li-4 {
+.li-5 {
 
   padding-left: 40px;
   padding-right: 55px;
@@ -265,20 +266,23 @@ input:focus{
 }
 
    #sidebar {
-    margin-bottom: 34px;
+    margin-bottom: 60px;
      background: rgb(255, 255, 255);
      float: left;
      width: 50%;
-     height: 500px;
+     height: 550px;
+     min-width: 50%;
 }
 .sidebar-main{
+ 
  position: relative;
  display: block;
  padding-left:100px;
+ padding-right: 50px;
    
 }
 .sidebar-main ul{
-  display: illine;
+ 
   padding-top: 7%;
   padding-bottom: 3%;
   position: relative;
@@ -289,11 +293,13 @@ display: inline;
  
 }
 #main {
+
   margin-bottom: 34px;
      background: rgb(255, 255, 255);
-     float: right;
+     float: left;
      width: 50%;
-     height: 500px;
+     height: 550px;
+     min-width: 50%;
 }
 .main-content{
   display: block;
@@ -363,9 +369,40 @@ button{
 #footer {
             background: rgb(241, 242, 236);
             height: 200px;
-            width: 100%;
+            width: 1200px;
+            overflow:hidden;
+            
 }
+.footer-content{
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+ 
+	height: 200px;
+  white-space:nowrap
+}
+.footer-content .footer-first{
+ 
+  width:200px;
+  height: 180px;
+  display:inline-block;
 
+}
+.footer-content .footer-two{
+  width:200px;
+  height: 180px;
+  display:inline-block;
+}
+#myImage{
+  margin-bottom: 34px;
+  padding-right: 20px;
+  width:100%; 
+  max-width:100%; 
+  height:100%;
+ 
+
+
+}
 </style>
 
 <body>
@@ -418,6 +455,7 @@ button{
       <a href="#"> <li class="li-3">Perl</li></a>
       <a href="#"> <li class="li-4">SQL</li></a>
       <a href="#"> <li class="li-5">PHP</li></a>
+     
   </ul>
   <div class="body-menu-search right"> 
       <input type="text" size="20">
@@ -433,7 +471,7 @@ button{
             <li >/</li>
             <a href="#"> <li >Футболки</li></a>
         </ul>
-    <img id="myImage" src ="img/tshirt_yellow.jpg" width="450" height="420">
+    <img id="myImage" src ="img/tshirt_yellow.jpg" >
     </div>
   </div>
     <div id="main">
@@ -479,10 +517,26 @@ button{
                                
     <div id="footer">
   
+      <div class="footer-content">
+<div class="footer-first">
+  <p><b>Сервис и поддержка</b></p> <br>
+  <a href="">Как сделать заказ</a> <br>
+  <a href="">Возврат товара</a> <br>
+  <a href="">Публичная офорта</a> <br>
+  <a href="">Доставка</a> 
+      </div>
+      <div class="footer-two">
+          <p><b>Сервис и поддержка</b></p> <br>
+          <a href="">Как сделать заказ</a> <br>
+          <a href="">Возврат товара</a> <br>
+          <a href="">Публичная офорта</a> <br>
+          <a href="">Доставка</a> 
+      </div>
+      </div>
     </div>
 
 </div>
-
+    </div>
 
 <script src="js/scripts.js"></script>
 </body>
