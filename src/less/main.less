@@ -3,37 +3,10 @@
 
 
 
-// Стили для всех девайсов (все @media-запросы) пишутся внитри блока
-.menu {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background: red;
 
-    @media @tablet {
-        background: green;
-    }
 
-    @media @desktop {
-        background: blue;
-    }
+    
 
-    // Пример стилей для элемента `.menu__item`
-    &__item {
-        display: inline-block;
-        list-style-type: none;
-    }
-
-    // Пример модификатора `.menu_bottom`
-    &_bottom {
-        background: green;
-    }
-
-    // Пример переопределения стилей элемента в нижнем меню `.menu_bottom .menu__item`
-    &_bottom &__item {
-        color: #f00;
-    }
-}
 html, body, div, span, figure, h1, h2, h3, h4, p, a, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, details, figure, figcaption, footer, header, hgroup, nav, section, img { margin: 0; padding: 0; border: 0; vertical-align: baseline; font: inherit; font-size: 100%; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 .clearfix:after { display: block; visibility: hidden; clear: both; height: 0; content: "."; }
@@ -41,13 +14,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .clearfix { display: block; }
 .none { display: none; }
 a{
-  color:rgb(204,0,1);
+  color:@logo-color;
 }
 body {
   line-height: 1;
   font-family: 'Roboto', sans-serif;
 }
-
+@logo-color:rgb(204,0,1);
 li {
   list-style-type: none; /* Убираем маркеры */
  }
@@ -124,7 +97,7 @@ border: 3px solid red;
 	width: 160px;
   height: 70px;
   
-	background: url(img/the_shop_logo.svg) 0 0 no-repeat;
+	background: url(../img/the_shop_logo.svg) 0 0 no-repeat;
 background-size: 80%;
 	text-indent: -99px;
 
@@ -185,8 +158,8 @@ background-size: 80%;
 	line-height: 28px;
 	font-size: 25px;
 	font-weight: 300;
-	cursor: pointer;
-	color: rgb(204,0,1);
+
+	color: @logo-color;
 }
 
 
@@ -248,18 +221,7 @@ ul {
   position: relative;
 }
 
-.li-1 {
-  padding-right: 50px;
- 
-  height: 90px;
-  width: 90px;
-}
 
-.li-5 {
-
-  padding-left: 40px;
-  padding-right: 55px;
-}
 .body-menu-search{
  
   display: block;
@@ -275,7 +237,7 @@ ul {
 input{
   padding-right: 1px;
 
-        background: url("img/Zoom.png") 95% 0 no-repeat;
+        background: url("../img/Zoom.png") 95% 0 no-repeat;
         background-size:10%; 
         background-color: white;
 }
@@ -350,7 +312,7 @@ display: inline;
 .main-cost p{
 font-weight: 500;
 font-size: 25px;
-color:rgb(204,0,1);
+color:@logo-color;
 }
 caption{
   text-align:left;
@@ -376,7 +338,7 @@ button{
   border: 1px solid;
   border-radius: 3px;
   cursor: pointer;
-  background: rgb(204,0,1);
+  background: @logo-color;
   border-color: red red red;
 
 }
@@ -404,14 +366,8 @@ button{
 	height: 200px;
   white-space:nowrap
 }
-.footer-content .footer-first{
- 
-  width:200px;
-  height: 180px;
-  display:inline-block;
 
-}
-.footer-content .footer-two{
+.footer-content div{
   width:200px;
   height: 180px;
   display:inline-block;
