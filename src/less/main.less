@@ -1,40 +1,7 @@
+@import (less) '../../node_modules/normalize.css/normalize.css';
+@import (less) '_media.less';
 
 
-/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
-
-/* Document
-
-   ========================================================================== */
-
-/**
-
- * 1. Correct the line height in all browsers.
-
- * 2. Prevent adjustments of font size after orientation changes in iOS.
-
- */
-
- 
-
-  /* Sections
-
-     ========================================================================== */
-
-  /**
-
-   * Remove the margin in all browsers.
-
-   */
-
-  
-
-  /**
-
-   * Correct the font size and margin on `h1` elements within `section` and
-
-   * `article` contexts in Chrome, Firefox, and Safari.
-
-   */
 
   h1 {
 
@@ -44,107 +11,13 @@
 
   }
 
-  /* Grouping content
-
-     ========================================================================== */
-
-  /**
-
-   * 1. Add the correct box sizing in Firefox.
-
-   * 2. Show the overflow in Edge and IE.
-
-   */
-
-  hr {
-
-    box-sizing: content-box;
-
-    /* 1 */
-
-    height: 0;
-
-    /* 1 */
-
-    overflow: visible;
-
-    /* 2 */
-
-  }
-
-  /**
-
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-
-   * 2. Correct the odd `em` font sizing in all browsers.
-
-   */
-
-  pre {
-
-    font-family: monospace, monospace;
-
-    /* 1 */
-
-    font-size: 1em;
-
-    /* 2 */
-
-  }
-
-  /* Text-level semantics
-
-     ========================================================================== */
-
-  /**
-
-   * Remove the gray background on active links in IE 10.
-
-   */
-
   
-  /**
+  
 
-   * 1. Remove the bottom border in Chrome 57-
 
-   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
 
-   */
-
-  abbr[title] {
-
-    border-bottom: none;
-
-    /* 1 */
-
-    text-decoration: underline;
-
-    /* 2 */
-
-    -webkit-text-decoration: underline dotted;
-
-            text-decoration: underline dotted;
-
-    /* 2 */
-
-  }
-
-  /**
-
-   * Add the correct font weight in Chrome, Edge, and Safari.
-
-   */
 
  
-
-  /**
-
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-
-   * 2. Correct the odd `em` font sizing in all browsers.
-
-   */
-
   code,
 
   kbd,
@@ -705,11 +578,22 @@
  
  
  .container{
-   min-width: 550px;;
- }
- @media (max-width: 800px) {
-  .container {min-width: 400px;}
+   min-width: 750px;
+ 
+   @media  @phone {
+    
+    min-width: 750px;
 }
+@media @tablet {
+  min-width: 750px;
+}
+@media @desktop {
+  min-width: 750px;
+}
+
+
+  }
+
   #head-menu {
 
 
